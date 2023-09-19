@@ -1,5 +1,9 @@
 function convertObjectToList(obj) {
-  // your code here
+  let result = [];
+  for (let element in obj) {
+    result.push([element, obj[element]]);
+  }
+  return result;
   
 }
 

@@ -1,5 +1,6 @@
 function getElementsAfter(array, n) {
-  // your code here
+  let elementsAfter = array.slice(n + 1);
+  return elementsAfter;
   
 }
 

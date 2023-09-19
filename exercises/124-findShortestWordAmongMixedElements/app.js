@@ -1,5 +1,15 @@
 function findShortestWordAmongMixedElements(arr) {
-    // your code here
+    let shortestWord = '';
+    let shortestLength = Infinity;
+  
+    for (let element of arr) {
+      if (typeof element === 'string' && element.length < shortestLength) {
+        shortestWord = element;
+        shortestLength = element.length;
+      }
+    }
+  
+    return shortestWord;
     
 }
 
